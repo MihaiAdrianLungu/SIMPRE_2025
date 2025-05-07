@@ -26,6 +26,9 @@ const RecordForm = ({ entry, onSubmit }) => {
     return (
         <div className="mt-4">
             <form className="max-w-sm mx-auto" onSubmit={handleSubmit}>
+                <div className="text-center font-bold text-xl">
+                    {entry?._id ? "Update record" : "Create record"}
+                </div>
                 <div className="mb-5">
                     <label
                         htmlFor="title"
