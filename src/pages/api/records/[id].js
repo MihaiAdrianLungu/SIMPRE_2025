@@ -25,7 +25,6 @@ const deleteRecord = async (id) => {
     return await collection.deleteOne({_id: new ObjectId(id)});
 }
 
-
 export default async function handler(req, res) {
     const { method, body, query } = req;
 
